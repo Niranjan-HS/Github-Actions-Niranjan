@@ -8,3 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello Niranjan 🚀"
+
+      - name: check hostname
+        run: hostname
+
+      - name: check current directory
+        run: pwd 
+
+      - name: check current user
+        run: whoami
