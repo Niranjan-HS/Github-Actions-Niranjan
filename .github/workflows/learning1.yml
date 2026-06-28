@@ -1,0 +1,12 @@
+name: learning1 Workflow
+
+on:
+  push:
+
+jobs:
+  learning1:
+    runs-on: self-hosted
+    steps:  
+    - name: Run learning1 file
+      run: 
+          nohup python3 app.py &
