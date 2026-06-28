@@ -1,3 +1,3 @@
-- name: Run app
-  run: |
+- name: Run learning1 file
+  run: 
     nohup python3 app.py &
