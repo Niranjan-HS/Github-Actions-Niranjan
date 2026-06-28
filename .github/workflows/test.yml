@@ -17,3 +17,10 @@ jobs:
 
       - name: check current user
         run: whoami
+
+      - name: show system info
+        run:  hostname
+               pwd
+               whoami
+               ls -la
+              
