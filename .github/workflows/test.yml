@@ -6,21 +6,26 @@ on:
 jobs:
   test:
     runs-on: self-hosted
-    steps:
-      - run: echo "Hello Niranjan 🚀"
+    steps:  
+         - name: Checkout code
+           uses: actions/checkout@v4
 
-      - name: check hostname
-        run: hostname
+         - name: Show system info
+           run: |
+                hostname
+                pwd
+                whoami
+                ls -la
+    
 
-      - name: check current directory
-        run: pwd 
+         - name: check hostname
+           run: hostname
 
-      - name: check current user
-        run: whoami
+         - name: check current directory
+           run: pwd 
 
-      - name: show system info
-        run:  hostname
-               pwd
-               whoami
-               ls -la
+         - name: check current user
+           run: whoami
+
+
               
